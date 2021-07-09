@@ -7,7 +7,7 @@
         "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "fabianblum/cryo-fall-statistics-api-client": "^0.0.1",
+        "fabianblum/cryo-fall-statistics-api-client": "^0.0.2",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
         "symfony/finder": "5.3.*",
@@ -16,6 +16,10 @@
         "symfony/runtime": "5.3.*",
         "symfony/yaml": "5.3.*",
         "team-reflex/discord-php": "^6.0"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     },
     "config": {
         "optimize-autoloader": true,

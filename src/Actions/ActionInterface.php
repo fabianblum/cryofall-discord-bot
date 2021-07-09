@@ -11,5 +11,5 @@ interface ActionInterface
 {
     public function getRegex(): string;
 
-    public function process(Message $message, Discord $discord): void;
+    public function process(Message $message, Discord $discord, array $matches): void;
 }

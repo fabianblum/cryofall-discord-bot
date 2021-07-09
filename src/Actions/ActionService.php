@@ -20,9 +20,9 @@ class ActionService
             $action = new $actionFqn();
 
             echo "\nCheck ".$action->getRegex()."...";
-            if (preg_match($action->getRegex(), strtolower($message->content))) {
+            if (preg_match($action->getRegex(), strtolower($message->content), $matches)) {
                 echo " match. Run action";
-                $action->process($message, $discord);
+                $action->process($message, $discord, $matches);
             }
         }
 

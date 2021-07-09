@@ -27,7 +27,7 @@ abstract class AbstractAction implements ActionInterface
         return $this->regex;
     }
 
-    abstract public function process(Message $message, Discord $discord): void;
+    abstract public function process(Message $message, Discord $discord, array $matches): void;
 
     protected string $regex;
 }

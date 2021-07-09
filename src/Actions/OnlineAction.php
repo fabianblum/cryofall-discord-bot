@@ -18,7 +18,7 @@ class OnlineAction extends AbstractAction
      * @throws ApiException
      * @throws Exception
      */
-    public function process(Message $message, Discord $discord): void
+    public function process(Message $message, Discord $discord, array $matches): void
     {
         $api = new ServerApi($this->getBotConfig()->getServerGuid());
 
