@@ -29,6 +29,7 @@ class BotConfiguration
 
     public function getToken(): Token
     {
-        return new Token($this->botConfigs['bot']['discord_token']);
+        $token = getenv('DISCORD_TOKEN');
+        return new Token($token);
     }
 }
